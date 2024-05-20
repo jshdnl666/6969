@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Consequential - CNSQNTL</title>
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+    <link rel="icon" href="tablogo.png">
+    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="background-image">    
+        <div class="navbar">
+            <a href='index.html'><img src="navlogo.png" class="logo"/></a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="content">
+        <h1>CONSEQUENTIAL</h1>
+        <p>Who said looking good has to be expensive? <br>Find your style today!</p>
+    </div>
+    
+    <div class="collection-titles"><h2>NEW ARRIVALS</h2><br><h3>"ON THE RUN COLLECTIONS"</h3></div>
+    
+    <div class="image-container">
+        <div class="image">
+            <img src="otrc-teee.png" alt="OTRC: Tee">
+            <div class="pname">
+                <h3>OTRC: Tee</h3>        
+                <h5>₱1,199</h5>
+            </div>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        
+        <div class="image">
+            <img src="otrc-hoodie.png" alt="OTRC: Hoodie">
+            <div class="pname">
+                <h3>OTRC: Hoodie</h3>
+                <h5>₱2,499</h5>
+            </div>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        
+        <div class="image">
+            <img src="otrc-shoes.png" alt="OTRC: Shoes">
+            <div class="pname">
+                <h3>OTRC: Shoes</h3>
+                <h5>₱3,499</h5>
+            </div>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <div class="image">
+            <img src="otrc-shorts.png" alt="OTRC: Shorts">
+            <div class="pname">
+                <h3>OTRC: Shorts</h3>
+                <h5>₱1,499</h5>
+            </div>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        
+        <div class="image">
+            <img src="otrc-pants.png" alt="OTRC: Pants">
+            <div class="pname">
+                <h3>OTRC: Pants</h3>
+                <h5>₱2,499</h5>
+            </div>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+    </div>
+    
+    <div class="cart-summary">
+        <h2>Order Summary</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Total</th>					
+                </tr>
+            </thead>
+            <tbody id="cart-items">                
+            </tbody>
+            <tfoot>
+                <tr id="total-price">
+                    <th>Grand Total</th>
+                    <td colspan="3"><span>0.00</span></td>
+                </tr>
+            </tfoot>
+        </table>
+		
+        <form id="checkout-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required><br><br>
+            <label for="contact-number">Contact Number:</label>
+            <input type="text" id="contact-number" name="contact-number" required><br><br>
+            <label for="amount-tendered">Amount Tendered:</label>
+            <input type="number" id="amount-tendered" name="amount-tendered" required><br><br>
+            <button type="submit">Checkout</button>
+            <button type="button" id="clear-cart">Clear Cart</button>
+        </form>
+    </div>
+
+</body>
+</html>
